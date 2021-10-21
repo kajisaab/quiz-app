@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Quiz from "./Quiz";
 
 function Home() {
-  const [questionNumber, setQuestionNumber] = useState(0);
+  const [questionNumber, setQuestionNumber] = useState(1);
   const data = [
     {
-      id: 1,
       question: "What is the capital city of Nepal ? ",
       answers: [
         {
@@ -27,7 +26,6 @@ function Home() {
       ],
     },
     {
-      id: 2,
       question: "What is Rolex famous for ",
       answers: [
         {
@@ -49,7 +47,6 @@ function Home() {
       ],
     },
     {
-      id: 3,
       question: "Which Company make Iphone ? ",
       answers: [
         {

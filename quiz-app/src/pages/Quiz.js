@@ -15,7 +15,7 @@ function Quiz({ data, questionNumber, setQuestionNumber }) {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    setQuestion(data[questionNumber]);
+    setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
 
   const SelectAnswer = (a) => {
@@ -30,8 +30,6 @@ function Quiz({ data, questionNumber, setQuestionNumber }) {
     }, 30);
   };
 
-  //   const shuffledArray = Array.sort(() => Math.random() - 0.5);
-
   const HandleSubmit = () => {
     if (buttonname === "Next") {
       if (questionNumber < 3) {
@@ -44,16 +42,9 @@ function Quiz({ data, questionNumber, setQuestionNumber }) {
       alert(score);
       setScore(0);
       setButtonName("Submit");
-      setQuestionNumber();
+      setQuestionNumber(1);
     }
   };
-  //   const RestartButton = () => {
-  //     alert(score);
-  //     setScore(0);
-  //     setButtonName("Submit");
-  //     setQuestionNumber(shuffledArray);
-  //   };
-  //   console.log(shuffledArray);
 
   return (
     <>
