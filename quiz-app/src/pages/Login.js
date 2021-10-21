@@ -40,7 +40,7 @@ function Login(props) {
         top={10}
         left={40}
       >
-        Money Manager Login
+        Quiz Login
       </Container>
       <Container
         left={40}

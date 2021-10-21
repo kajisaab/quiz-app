@@ -1,0 +1,62 @@
+.answer {
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  background-color: grey;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0px 10px 20px 30px;
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer.active {
+  background-color: red;
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background-color: black;
+  }
+  20%,
+  40%,
+  60% {
+    background-color: white;
+  }
+
+  62%,
+  100% {
+    background-color: green;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background-color: black;
+  }
+  20%,
+  40%,
+  60% {
+    background-color: white;
+  }
+
+  62%,
+  100% {
+    background-color: crimson;
+  }
+}

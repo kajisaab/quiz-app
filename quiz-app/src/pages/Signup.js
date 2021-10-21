@@ -67,7 +67,7 @@ function Signup(props) {
           top={10}
           padding={20}
         >
-          Money Manager Sign Up
+          Quiz Sign Up
         </Container>
         <Container
           onSubmit={formik.handleSubmit}
