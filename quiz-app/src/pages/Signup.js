@@ -127,29 +127,6 @@ function Signup(props) {
           </InputContainer>
           <InputContainer>
             <InputSection txtalign={"center"}>
-              {formik.errors.Office && formik.touched.Office ? null : (
-                <Text color={"grey-500"} ftsize={1.5} jtcontent={"center"}>
-                  Office{" "}
-                </Text>
-              )}
-              {/* <Text color={"grey-500"} ftsize = {1.5}> Office</Text> */}
-              <Input
-                type="text"
-                name="Office"
-                placeholder="Enter Your Organization Name"
-                value={formik.values.Office}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-              />
-              {formik.errors.Office && formik.touched.Office ? (
-                <TextBox>
-                  <Text color={"red"} ftsize={0.8}>
-                    {formik.errors.Office}
-                  </Text>
-                </TextBox>
-              ) : null}
-            </InputSection>
-            <InputSection txtalign={"center"}>
               {formik.errors.Email_Address &&
               formik.touched.Email_Address ? null : (
                 <Text color={"grey-500"} ftsize={1.5} jtcontent={"center"}>
